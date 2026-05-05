@@ -1,0 +1,14 @@
+{
+  "name": "list_services",
+  "description": "List all services in your Render account",
+  "arguments": {
+    "type": "object",
+    "properties": {
+      "includePreviews": {
+        "default": false,
+        "description": "Whether to include preview services in the response. Defaults to false.",
+        "type": "boolean"
+      }
+    }
+  }
+}

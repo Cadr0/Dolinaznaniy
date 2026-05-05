@@ -1,0 +1,8 @@
+{
+  "name": "list_workspaces",
+  "description": "List the workspaces that you have access to",
+  "arguments": {
+    "type": "object",
+    "properties": {}
+  }
+}

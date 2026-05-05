@@ -1,0 +1,16 @@
+{
+  "name": "update_web_service",
+  "description": "Update an existing web service in your Render account.",
+  "arguments": {
+    "type": "object",
+    "properties": {
+      "serviceId": {
+        "description": "The ID of the service to update",
+        "type": "string"
+      }
+    },
+    "required": [
+      "serviceId"
+    ]
+  }
+}

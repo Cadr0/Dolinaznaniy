@@ -1,0 +1,8 @@
+{
+  "name": "list_key_value",
+  "description": "List all Key Value instances in your Render account",
+  "arguments": {
+    "type": "object",
+    "properties": {}
+  }
+}

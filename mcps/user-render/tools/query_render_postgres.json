@@ -1,0 +1,21 @@
+{
+  "name": "query_render_postgres",
+  "description": "Run a read-only SQL query against a Render-hosted Postgres database. This tool creates a new connection for each query and closes it after the query completes.",
+  "arguments": {
+    "type": "object",
+    "properties": {
+      "postgresId": {
+        "description": "The ID of the Postgres instance to query",
+        "type": "string"
+      },
+      "sql": {
+        "description": "The SQL query to run. Note that the query will be wrapped in a read-only transaction.",
+        "type": "string"
+      }
+    },
+    "required": [
+      "postgresId",
+      "sql"
+    ]
+  }
+}

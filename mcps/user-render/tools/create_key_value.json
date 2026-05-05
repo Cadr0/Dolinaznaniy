@@ -1,0 +1,54 @@
+{
+  "name": "create_key_value",
+  "description": "Create a new Key Value instance in your Render account",
+  "arguments": {
+    "type": "object",
+    "properties": {
+      "maxmemoryPolicy": {
+        "description": "The eviction policy for the Key Value store",
+        "enum": [
+          "noeviction",
+          "allkeys_lfu",
+          "allkeys_lru",
+          "allkeys_random",
+          "volatile_lfu",
+          "volatile_lru",
+          "volatile_random",
+          "volatile_ttl"
+        ],
+        "type": "string"
+      },
+      "name": {
+        "description": "Name of the Key Value instance",
+        "type": "string"
+      },
+      "plan": {
+        "default": "free",
+        "description": "Pricing plan for the Key Value instance",
+        "enum": [
+          "free",
+          "starter",
+          "standard",
+          "pro",
+          "pro_plus"
+        ],
+        "type": "string"
+      },
+      "region": {
+        "default": "oregon",
+        "description": "Region where the Key Value instance will be deployed",
+        "enum": [
+          "oregon",
+          "frankfurt",
+          "singapore",
+          "ohio",
+          "virginia"
+        ],
+        "type": "string"
+      }
+    },
+    "required": [
+      "name"
+    ]
+  }
+}

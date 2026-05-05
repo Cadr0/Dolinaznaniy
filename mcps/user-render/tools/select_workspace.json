@@ -1,0 +1,16 @@
+{
+  "name": "select_workspace",
+  "description": "Select a workspace to use for all actions. This tool should only be used after explicitly asking the user to select one, it should not be invoked as part of an automated process. Having the wrong workspace selected can lead to destructive actions being performed on unintended resources.",
+  "arguments": {
+    "type": "object",
+    "properties": {
+      "ownerID": {
+        "description": "The ID of the owner to select",
+        "type": "string"
+      }
+    },
+    "required": [
+      "ownerID"
+    ]
+  }
+}

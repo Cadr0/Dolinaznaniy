@@ -1,0 +1,21 @@
+{
+  "name": "get_deploy",
+  "description": "Retrieve the details of a particular deploy for a particular service.",
+  "arguments": {
+    "type": "object",
+    "properties": {
+      "deployId": {
+        "description": "The ID of the deployment to retrieve",
+        "type": "string"
+      },
+      "serviceId": {
+        "description": "The ID of the service to get deployments for",
+        "type": "string"
+      }
+    },
+    "required": [
+      "serviceId",
+      "deployId"
+    ]
+  }
+}

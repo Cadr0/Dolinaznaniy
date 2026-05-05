@@ -1,0 +1,16 @@
+{
+  "name": "update_static_site",
+  "description": "Update an existing static site in your Render account.",
+  "arguments": {
+    "type": "object",
+    "properties": {
+      "serviceId": {
+        "description": "The ID of the service to update",
+        "type": "string"
+      }
+    },
+    "required": [
+      "serviceId"
+    ]
+  }
+}
